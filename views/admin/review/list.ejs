@@ -1,0 +1,92 @@
+<%- include('../includes/header'); -%>
+
+    <%- include('../includes/leftsidebar'); -%>
+
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <h2>
+                        REVIEW LIST
+                    </h2>
+                </div>
+                <!-- Basic Examples -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    REVIEW LIST
+                                </h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <a href="<%=process.env.BASE_URL%>/admin/review/add">
+                                        <button type="button" class="btn btn-primary waves-effect">Add Review</button>
+                                    </a>
+                                    <!-- <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <%- include('../includes/message'); -%>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Description</th>
+                                                <th>Image</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <%if(Data){Data.forEach(function(currentValue, index){%>
+                                                <tr>
+                                                    <td><%=currentValue.name%></td>
+                                                    <td><%=currentValue.position%></td>
+                                                    <td><%=currentValue.description%></td>
+                                                    <td>
+                                                        <%if(currentValue.image != null && currentValue.image != ''){%>
+                                                            <img height="60px" width="60px" src="/review/<%=currentValue.image%>" />
+                                                        <%}else{%>
+                                                            <img height="60px" width="60px" src="<%=process.env.UNAVAILABLE_IMAGE%>" />
+                                                        <%}%>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/review/isactive/<%=currentValue.id%>">
+                                                            <button type="button" class="btn <%=(currentValue.status) ? 'btn-success' : 'btn-danger'%> waves-effect">
+                                                                <%=(currentValue.status) ? 'Active' : 'Block'%>
+                                                            </button>
+                                                        </a>    
+                                                    </td>
+                                                    <td>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/review/edit/<%=currentValue.id%>"><button type="button" class="btn btn-edit waves-effect"><i class="material-icons">edit</i>
+                                                        </button></a>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/review/delete/<%=currentValue.id%>">
+                                                        <button type="button" class="btn btn-danger waves-effect"><i class="material-icons">delete</i>
+                                                        </button></a>
+                                                    </td>
+                                                </tr>
+                                            <%});}%>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Basic Examples -->
+            </div>
+        </section>
+    
+
+
+        <%- include('../includes/footer'); -%>

@@ -1,0 +1,118 @@
+<%- include('../includes/header') %>
+
+<%- include('../includes/leftsidebar') %>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>EDIT STTING</h2>
+        </div>
+        <!-- add list -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Fill Your Information</h2>
+                    </div>
+                    <div class="body">
+                        <%- include('../includes/message'); -%>
+                        <form id="form_validation" action="<%=process.env.BASE_URL%>/admin/setting/editsave" method="POST" enctype="multipart/form-data" novalidate="novalidate">
+                            <input type="hidden" name="id" value="<%=DataObj.id%>">
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.company_name%>" class="form-control" name="name" required="" aria-required="true">
+                                    <label class="form-label">Company Name</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.company_title%>" class="form-control" name="title" required="" aria-required="true">
+                                    <label class="form-label">Title</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.email%>" class="form-control" name="email" required="" aria-required="true">
+                                    <label class="form-label">EmailID</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="url" value="<%=DataObj.facebook%>" class="form-control" name="facebook" required="" aria-required="true">
+                                    <label class="form-label">Facebook link</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="url" value="<%=DataObj.instagram%>" class="form-control" name="instagram" required="" aria-required="true">
+                                    <label class="form-label">Instagram link</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="url" value="<%=DataObj.twitter%>" class="form-control" name="twitter" required="" aria-required="true">
+                                    <label class="form-label">Twitter link</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="number" value="<%=DataObj.whatsapp%>" maxlength="10" minlength="10" class="form-control" name="WhatsApp" required="" aria-required="true">
+                                    <label class="form-label">WhatsApp</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.location%>" class="form-control" name="location" required="" aria-required="true">
+                                    <label class="form-label">Location</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <label class="form-label">Copany Logo</label>
+                                <input type="file" value="<%=DataObj.company_logo%>" class="form-control" name="company_logo" aria-required="true">
+                                 
+                            </div>
+                                <div>
+                                    <%if(DataObj.company_logo != null && DataObj.company_logo != ''){%>
+                                        <img height="100px" src="/setting/company_logo/<%=DataObj.company_logo%>" />
+                                    <%}%>
+                                </div>
+                            <div class="form-group form-float">
+                                <label class="form-label">Favicon</label>
+                                <input type="file" value="<%=DataObj.favicon%>" class="form-control" name="favicon" aria-required="true">
+                            </div>
+                                <div>
+                                    <%if(DataObj.favicon != null && DataObj.favicon != ''){%>
+                                        <img height="100px" src="/setting/favicon/<%=DataObj.favicon%>" />
+                                    <%}%>
+                                </div>   
+                            <div class="form-group form-float">
+                                <label class="form-label">Header Image</label>
+                                <input type="file" value="<%=DataObj.HeaderBg%>" class="form-control" name="header_bg" aria-required="true">
+                                 
+                            </div>
+                                <div>
+                                    <%if(DataObj.HeaderBg != null && DataObj.HeaderBg != ''){%>
+                                        <img height="100px" src="/setting/header_bg/<%=DataObj.HeaderBg%>" />
+                                    <%}%>
+                                </div> 
+                            <div class="form-group form-float">
+                                <label class="form-label">Footer Image</label>
+                                <input type="file" value="<%=DataObj.FooterBg%>" class="form-control" name="footer_bg" aria-required="true">
+                                 
+                            </div>
+                                <div>
+                                    <%if(DataObj.FooterBg != null && DataObj.FooterBg != ''){%>
+                                        <img height="100px" src="/setting/footer_bg/<%=DataObj.FooterBg%>" />
+                                    <%}%>
+                                </div><br>
+                            <button class="btn btn-primary waves-effect" type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Basic Validation -->
+    </div>
+</section>
+
+<%- include('../includes/footer') %>

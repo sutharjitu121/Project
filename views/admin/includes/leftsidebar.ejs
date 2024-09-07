@@ -1,0 +1,134 @@
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="<%=process.env.ADMIN_UPLOAD_URL%>user/<%=userData.userprofile%>" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=userData.Fname%> <%=userData.Lname%></div>
+                    <div class="email"><%=userData.EmailID%></div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="<%=process.env.BASE_URL%>/admin/user/edit/<%=userData.UserID%>"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="<%=process.env.BASE_URL%>/admin/logout/"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="<%=(active && active=='Dashboard')?'active':''%>">
+                        <a href="<%=process.env.BASE_URL%>/admin/dashboard">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='user')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/user/">
+                            <i class="material-icons">person</i>
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='member')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/membership/">
+                            <i class="material-icons">person</i>
+                            <span>Members</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='team')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/team/">
+                            <i class="material-icons">people</i>
+                            <span>Team</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='gallery_category')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/gallery_category/">
+                            <i class="material-icons">view_module</i>
+                            <span>Gallery Category</span>
+                        </a>
+                    </li> 
+                    <li class="<%=(active && active=='gallery')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/gallery/">
+                            <i class="material-icons">collections</i>
+                            <span>Gallery</span>
+                        </a>
+                    </li>                   
+                    <li class="<%=(active && active=='blog')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/blog/">
+                            <i class="material-icons">burst_mode</i>
+                            <span>Blog</span>
+                        </a>
+                    </li>  
+                    <li class="<%=(active && active=='services')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/services/">
+                            <i class="material-icons">chrome_reader_mode</i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='video')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/video/">
+                            <i class="material-icons">perm_media</i>
+                            <span>Video Section</span>
+                        </a>
+                    </li>                 
+                    <li class="<%=(active && active=='review')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/review/">
+                            <i class="material-icons">dehaze</i>
+                            <span>Review</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='f_and_q')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/f_and_q/">
+                            <i class="material-icons">question_answer</i>
+                            <span>F And Q</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='about')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/about/">
+                            <i class="material-icons">person</i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='contact')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/contact/">
+                            <i class="material-icons">contacts</i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='subscribeemail')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/subscribeemail">
+                            <i class="material-icons">email</i>
+                            <span>Subscribe Email</span>
+                        </a>
+                    </li>
+                    <li class="<%=(active && active=='setting')?'active':''%>" >
+                        <a href="<%=process.env.BASE_URL%>/admin/setting/">
+                            <i class="material-icons">build</i>
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                </ul> 
+            </div>      
+            <!-- #Menu -->
+            <!-- Footer -->
+           <div class="legal">
+                <div class="copyright">
+                    &copy; <%= new Date().getFullYear() %> <a href="/" target="_blank"><%=ComData.company_name%></a>.
+                </div>
+            </div> 
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        
+
+        <%- include('rightsidebar') %>
+        
+    </section>

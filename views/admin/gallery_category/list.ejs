@@ -1,0 +1,78 @@
+<%- include('../includes/header'); -%>
+
+<%- include('../includes/leftsidebar'); -%>
+
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <h2>
+                        Gallery Category
+                    </h2>
+                </div>
+                <!-- Basic Examples -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    Gallery Category
+                                </h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <a href="<%=process.env.BASE_URL%>/admin/gallery_category/add">
+                                        <button type="button" class="btn btn-primary waves-effect">Add</button>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <%- include('../includes/message'); -%>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">                                      
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Show</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>  
+                                        </thead>   
+                                        <tbody>
+                                            <%if(Data){Data.forEach(function(currentValue, index){%>
+                                                <tr>
+                                                    <td><%=currentValue.name%></td>
+                                                    <td>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/gallery_category/is_show/<%=currentValue.id%>">
+                                                            <button type="button" class="btn <%=(currentValue.is_show) ? 'btn-success' : 'btn-danger'%> waves-effect">
+                                                                <%=(currentValue.is_show) ? 'Show' : 'Block'%>
+                                                            </button>
+                                                        </a>    
+                                                    </td>
+                                                    <td>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/gallery_category/isactive/<%=currentValue.id%>">
+                                                            <button type="button" class="btn <%=(currentValue.status) ? 'btn-success' : 'btn-danger'%> waves-effect">
+                                                                <%=(currentValue.status) ? 'Active' : 'Block'%>
+                                                            </button>
+                                                        </a>    
+                                                    </td>
+                                                    <td>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/gallery_category/edit/<%=currentValue.id%>"><button type="button" class="btn btn-edit waves-effect"><i class="material-icons">edit</i>
+                                                        </button></a>
+                                                        <a href="<%=process.env.BASE_URL%>/admin/gallery_category/delete/<%=currentValue.id%>">
+                                                        <button type="button" class="btn btn-danger waves-effect"><i class="material-icons">delete</i>
+                                                        </button></a>
+                                                    </td>
+                                                </tr>
+                                            <%});}%>
+                                        </tbody>                                    
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Basic Examples -->
+            </div>
+        </section>
+    
+
+
+<%- include('../includes/footer'); -%>

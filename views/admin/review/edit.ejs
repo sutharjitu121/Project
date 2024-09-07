@@ -1,0 +1,57 @@
+<%- include('../includes/header') %>
+
+<%- include('../includes/leftsidebar') %>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>EDIT REVIEW</h2>
+        </div>
+        <!-- add list -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Fill Your Information</h2>
+                    </div>
+                    <div class="body">
+                        <%- include('../includes/message'); -%>
+                        <form id="form_validation" action="<%=process.env.BASE_URL%>/admin/review/editsave" method="POST" enctype="multipart/form-data" novalidate="novalidate">
+                            <input type="hidden" name="id" value="<%=DataObj.id%>">
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.name%>" class="form-control" name="name" required="" aria-required="true">
+                                    <label class="form-label">Name</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input type="text" value="<%=DataObj.position%>" class="form-control" name="position" required="" aria-required="true">
+                                    <label class="form-label">Position</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <textarea name="description" cols="30" rows="5" class="form-control no-resize" required="" aria-required="true"><%=DataObj.description%></textarea>
+                                    <label class="form-label">Description</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-float">
+                                 <input type="file" value="<%=DataObj.image%>" class="form-control" name="Imagefile" aria-required="true">
+                            </div>
+                                <div>
+                                    <%if(DataObj.image != null){%>
+                                        <img height="150px" src="/review/<%=DataObj.image%>" />
+                                    <%}%>
+                                </div>
+                            <button class="btn btn-primary waves-effect" type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Basic Validation -->
+    </div>
+</section>
+
+<%- include('../includes/footer') %>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo-school-140x140.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>Blog Data</title>
+
+    <!-- favicon  -->
+    <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="icon">
+    <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="apple-touch-icon">
+    
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/tether/tether.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/theme/css/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/gallery/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/recaptcha.css">
+    <link rel="preload" as="style" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css" type="text/css">
+  </head>
+  <!-- ======= Header ======= -->
+  <section class="menu1 cid-rVKhxH9nGA" once="menu" id="menu1-0">
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+            <div class="col-lg-auto padd_lr_0">
+                <span class="navbar-logo">
+                    <img src="/setting/company_logo/<%=SettingData.company_logo%>" style="height: 115px;margin-left: 30px;">
+                </span>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#about">About the Center</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#services">Programs and Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#gallery1-4">Photo Album</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>/membership">Membership</a>
+                </li>
+            </ul>
+            <div class="widget">
+              <p class="block__phone mbr-fonts-style display-5">Inquery <a href="tel:<%=SettingData.whatsapp%>" class="widget_tel mbr-medium text-warning">+91 <%=SettingData.whatsapp%></a></p>           
+            </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+</body>
+
+    <section class="breadcrumbs">
+      <div class="container" style="max-width: 900px;">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style="margin-bottom: 20px; margin-top: 20px">Blog</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-page" style="padding: 0px 0;">
+      <div class="container" style="max-width: 900px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/blog/<%=blogdata.image%>" alt="Los Angeles" style="width:100%;">
+            </div>
+          </div>
+        </div><br>
+        <h1><%= blogdata.title%></h1><br>
+        <p><%- blogdata.description -%></p><br><br><br>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<footer id="footer">
+  
+  <section class="footer1 cid-rVMpGQKEQU" id="footer1-g">
+    <div class="animation__background">
+        <!-- <img src="assets/images/triangle-purpl-semitransp.svg" class="triangle" alt="" title=""> -->
+        <div class="circle"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-12 wrap order-0">
+                <img class="logo__image" src="/setting/company_logo/<%=SettingData.company_logo%>" alt="Mobirise" title="">
+                <p class="brand__email mbr-fonts-style display-4"><a href="mailto:<%=SettingData.email%>"><%=SettingData.email%></a></p>
+                <p class="brand__phone mbr-fonts-style display-7"><a href="tel:<%=SettingData.whatsapp%>">+91 <%=SettingData.whatsapp%></a></p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">About the Center</h4>
+                <div class="mbr-list">
+                    <p class="footer__items mbr-fonts-style display-4">About</a></p>
+                    <p class="footer__items mbr-fonts-style display-4">Help</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Services</h4>
+                <div class="mbr-list">    
+                    <p class="footer__items mbr-fonts-style display-4">Programs</p>
+                    <p class="footer__items mbr-fonts-style display-4">Photo Album</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Our Address</h4>
+                <p class="footer__adress mbr-fonts-style display-4"><%=SettingData.location%></p>
+                <ul class="mbr-list social">      
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.facebook%>">
+                            <span class="fa fa-facebook-f mbr-iconfont"></span>
+                        </a>
+                    </li>
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.twitter%>">
+                            <span class="fa fa-twitter mbr-iconfont"></span>
+                        </a>
+                    </li>
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.instagram%>">
+                            <span class="fa fa-instagram mbr-iconfont">
+                            </span>
+                        </a>
+                    </li>
+                </ul>       
+            </div> 
+        </div>   
+    </div>             
+</section>
+
+<script src="<%=process.env.ASSETS_URL%>assets/web/assets/jquery/jquery.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/popper/popper.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/tether/tether.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/playervimeo/vimeo_player.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/masonry/masonry.pkgd.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/smoothscroll/smooth-scroll.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/nav-dropdown.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/mbr-tabs/mbr-tabs.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.full.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/theme/js/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/slidervideo/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/gallery/player.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/gallery/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formoid.min.js"></script>
+
+</body>
+
+</html>
+  

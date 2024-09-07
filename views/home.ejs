@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="shortcut icon" href="/setting/company_logo/<%=SettingData.company_logo%>" type="image/x-icon">
+        <meta name="description" content="">
+        <title><%=SettingData.company_name%></title>
+        <!-- favicon  -->
+        <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="icon">
+        <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="apple-touch-icon">
+
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons2/mobirise2.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons/mobirise-icons.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/tether/tether.min.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/socicon/css/styles.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/dropdown/css/style.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.theme.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.min.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/theme/css/style.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/gallery/style.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/recaptcha.css">
+        <link rel="preload" as="style" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css">
+        <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css" type="text/css">
+        <style>
+            
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #4e62d3;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+/* .subscribe {
+    padding: 25vh 0;
+    background: url(https://i.ibb.co/r4xf3sK/newslater.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+} */
+
+.subscribe:before {
+  content: "";
+  /*background: rgba(6, 12, 34, 0.6); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.subscribe .section-header h2,
+.subscribe p {
+  color: rgb(39,55,105);
+}
+
+.subscribe input {
+  background: rgb(197, 222, 228);
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.subscribe button {
+  border: 0;
+  padding: 3px 25px;
+  cursor: pointer;
+  background: rgb(39,55,105);
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.subscribe button:hover {
+  background: #e0072f;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe input {
+    min-width: 400px;
+}
+
+}
+        </style>
+    </head>
+    <body>
+        <section class="menu1 cid-rVKhxH9nGA" once="menu" id="menu1-0">
+            <nav class="navbar navbar-dropdown navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <div class="col-lg-auto padd_lr_0">
+                            <span class="navbar-logo">
+                                <img src="/setting/company_logo/<%=SettingData.company_logo%>" alt="" style="height: 115px;margin-left: 30px;">
+                            </span>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                            <li class="nav-item">
+                                <a class="nav-link link text-secondary display-7">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link text-secondary display-7" href="index.html#content4-3">About the Center</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link text-secondary display-7" href="index.html#features1-b">Programs and Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link text-secondary display-7" href="index.html#gallery1-4">Photo Album</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>/membership">Membership</a>
+                            </li>
+                        </ul>
+                        <div class="widget">
+                            <p class="block__phone mbr-fonts-style display-5">Inquery <a href="tel:<%=SettingData.whatsapp%>" class="widget_tel mbr-medium text-warning">+91 <%=SettingData.whatsapp%></a></p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="header2 cid-rVM8gWsqUq" id="header2-a">
+            <div class="animation__background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            
+            <div class="image__background">
+                <img src="/setting/header_bg/<%=SettingData.HeaderBg%>" class="image" alt="" title="">
+                <div class="circle__image"></div>
+                <div class="circle__image2"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 title__block">
+                        <h1 class="mbr-section-title mbr-fonts-style display-1">Welcome to the<div><b><%=SettingData.company_name%></b></div></h1>
+                        <p class="mbr-text mbr-fonts-style display-7"><%- SettingData.company_title -%></p>
+                    </div>
+                    <div class="buttons__block col-lg-12">
+                        <div class="inner__button">
+                            <div class="mbr-section-btn">
+                                <a class="btn btn-md btn-warning display-7" href="index.html#content4-3">About the Center</a>
+                            </div>
+                            <div>
+                                <div class="modalWindow" style="display: none;">
+                                    <div class="modalWindow-container">
+                                        <div class="modalWindow-video-container">
+                                            <div class="modalWindow-video">
+                                                <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://www.youtube.com/watch?v=36YgDDJ7XSc"></iframe>
+                                            </div>
+                                            <a class="close" role="button" data-dismiss="modal">
+                                                <span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span>
+                                                <span class="sr-only">Close</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content4 cid-rVKhV3njsK" id="content4-3"> 
+            <div class="animation__background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <img src="assets/images/triangle-purpl-transp.svg" class="triangle" alt="">
+            </div>
+            <div class="image__background">
+                <div class="circle__image1"></div>
+                <div class="circle__image2"></div>
+            </div>
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <%if(AboutData){AboutData.forEach(function (value, index){%>
+                    <div class="title__block col-lg-6">
+                        <h3 class="mbr-section-title mbr-medium mbr-fonts-style display-2"><%= value.title %></h3>
+                        <h5><%= value.subtitle %></h5><br>
+                        <p class="mbr-text mbr-fonts-style display-4">
+                            <%- value.description -%>
+                        </p>
+                        <div class="mbr-section-btn"><!--<a class="btn btn-sm btn-warning display-4" href="#">Sign up for a lesson</a>--></div> 
+                    </div>
+                    <div class="col-lg-6 wrap__image">
+                        <div class="image__block1">
+                            <div class="image">
+                                <img src="/about/<%=value.image%>" alt="" title="">
+                            </div>
+                        </div>
+                        <div class="image__block2">
+                            <div class="image">
+                                <img src="/about/<%=value.image%>" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                    <% })}%>
+                </div> 
+            </div>
+        </section>
+
+        <section class="content1 cid-rVMdmjU4Mx" id="content1-c">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="title__block col-lg-12"> 
+                        <h3 class="mbr-section-title mbr-fonts-style display-2">Programs and Services<span class="verline"></span></h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="features1 cid-rVMaoT85d6" id="features1-b">
+            <div class="container">
+                <div class="row showArrow">
+                    <%if(ServiceData){ServiceData.forEach(function (value, index){%>
+                    <div class="card col-md-6 col-lg-4">
+                        <div class="card-inner">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <div class="animation__background"></div>
+                            <div class="icon__block" style="margin-bottom: 10px;">
+                                <img src="/services/<%=value.image%>" height="180px" width="180px" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-box">
+                                <h4 class="card-title mbr-fonts-style display-5" style="margin-bottom: 10px;"><%= value.title %></h4>
+                                <p class="mbr-text mbr-fonts-style display-4" style="margin-bottom: 10px;"><%= value.subtitle %> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <%})}%>
+                </div>
+            </div>
+        </section>
+
+        <section class="team cid-rVMdZP98Iw" id="team-d">
+            <div class="animation__background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 title__block">
+                        <h3 class="mbr-section-title mbr-fonts-style display-2">Team</h3>
+                    </div>
+                </div><br><br>
+                <div class="row">
+                    <%if(TeamData){TeamData.forEach(function (value, index){%>
+                    <div class="card__wrap col-lg-4 col-md-6 col-sm-6">
+                        <div class="card">
+                            <div class="image__card">
+                                <img src="/team/<%=value.image%>" alt="" title="">
+                                <div class="card__info">
+                                    <h4 class="card__title mbr-fonts-style display-5"><%= value.name%></h4>
+                                    <p class="card__text mbr-fonts-style display-4"><%= value.position%></p>
+                                    <%if(value.facebook_link != '' && value.facebook_link != null){%>
+                                        <a target="_blank" href="<%= value.facebook_link%>" style="padding-right: 10px;"><i class="icofont-twitter"></i><span class="fa fa-facebook-f mbr-iconfont"></a></span>
+                                    <%}%>
+                                    <%if(value.twitter != '' && value.twitter != null){%>
+                                        <a target="_blank" href="<%= value.twitter%>" style="padding-right: 10px;"><i class="icofont-twitter"></i><span class="fa fa-twitter mbr-iconfont"></a></span>
+                                    <%}%>
+                                    <%if(value.instagram != '' && value.instagram != null){%>
+                                        <a target="_blank" href="<%= value.twitter%>" style="padding-right: 10px;"><i class="icofont-twitter"></i><span class="fa fa-instagram mbr-iconfont"></a></span>
+                                    <%}%>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <% })}%>
+                </div>
+            </div>
+        </section>
+
+        <section class="features9 cid-rVKm2LJaTN" id="features9-9">
+            <div class="animation__background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <img src="assets/images/triangle-blue-transp.svg" class="triangle" alt="">
+                <img src="assets/images/quadr.svg" class="quadr" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 title__block">
+                        <h3 class="mbr-section-title mbr-fonts-style display-2">Social life</h3>
+                    </div>
+                </div>
+                <div class="media-container-row">
+                    <%if(BlogData){BlogData.forEach(function (value, index){%> 
+                    <div class="wrap col-sm-6 col-lg-4">
+                        <div class="card__wrap">
+                            <div class="image">
+                                <img src="/blog/<%=value.image%>" alt="" title="">
+                            </div>
+                            <!-- <p class="card__date mbr-fonts-style display-4">March 24, 2020</p> -->
+                            <h2><%= value.title%></h2>
+                            <p style="font-size: 15px;padding-left: 0px; padding-right: 14px;"><%- value.description.replace(/<[^>]+>/g, '').substring(0, 151) -%>...</p>
+                            <div class="mbr-section-btn">
+                                <a class="btn btn-sm btn-warning-outline display-4" href="/blog/<%= value.id%>/<%= value.title.replace(' ','-').substring(0, 100)%>">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <%})}%>
+                </div>
+            </div>  
+        </section>
+
+        <section class="content1 cid-rVMdmjU4Mx" id="content1-c">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="title__block col-lg-12"> 
+                        <h3 class="mbr-section-title mbr-fonts-style display-2">Gallery</h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="mbr-gallery mbr-slider-carousel gallery cid-rVKhX2d2on" id="gallery1-4">
+            <div>
+                <div>
+                    <div class="mbr-gallery-row">
+                        <div class="mbr-gallery-layout-default">
+                            <div>
+                                <div>
+                                    <%if(GalleryData){GalleryData.forEach(function (value, index){%>
+                                    <div class="mbr-gallery-item mbr-gallery-item--p2" data-video-url="false" data-tags="Awesome">
+                                        <div href="#lb-gallery1-4" data-slide-to="<%=index%>" data-toggle="modal">
+                                            <img src="/gallery/<%= value.image %>" alt="" title="">
+                                            <span class="icon-focus"></span>
+                                            <span class="mbr-gallery-title mbr-fonts-style display-7"><%= value.name %></span>
+                                        </div>
+                                    </div>
+                                    <% })}%>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lightbox -->
+                    <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-4">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <ol class="carousel-indicators">
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" class=" active" data-slide-to="0"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="1"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="2"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="3"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="4"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="5"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="6"></li>
+                                        <li data-app-prevent-settings="" data-target="#lb-gallery1-4" data-slide-to="7"></li>
+                                    </ol>
+                                    
+                                    <div class="carousel-inner">
+                                        <%if(GalleryData){GalleryData.forEach(function (value, index){%>
+                                        <div class="carousel-item <%= (index == 0) ? 'active' : '' %>">
+                                            <img src="/gallery/<%= value.image %>" alt="" title="">
+                                        </div>
+                                        <% })}%>
+                                    </div>
+                                    
+                                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-4">
+                                        <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery1-4">
+                                        <span class="mbri-right mbr-iconfont" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    <a class="close" href="#" role="button" data-dismiss="modal">
+                                        <span class="sr-only">Close</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials1 carousel slide testimonials-slider cid-rVKibaQ5D7" data-interval="false" id="testimonials1-6">
+            
+            <div class="animation__background">
+                <%if(ReviewData){ReviewData.forEach(function (value, index){%>
+                    <img src="/review/<%= value.image%>" alt="" class="image" title="">
+                <%})}%>
+                <div class="circle"></div>
+                <div class="circle2"></div>
+            </div>
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="title__block col-lg-9">
+                        <h2 class="mbr-section-title mbr-fonts-style display-2">What do People Say <br> About the Center</h2>
+                    </div>
+                    <div class="col-lg-8 margin__bot">
+                        <div class="wrap">
+                            <div class="icon__bg"></div>
+                            <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
+                                <div class="carousel-inner">
+                                    <%if(ReviewData){ReviewData.forEach(function (value, index){%>
+                                    <div class="carousel-item">
+                                        <div class="carousel__block">
+                                            <p class="carousel__text mbr-fonts-style display-5"><%= value.description%></p>
+                                            <div class="author">
+                                                <div class="user_name mbr-medium mbr-fonts-style display-7">
+                                                    <%= value.name%>
+                                                </div>
+                                                <div class="user_prof mbr-fonts-style display-4">
+                                                    <%= value.position%>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <%})}%>
+                                </div> 
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <a class="carousel-control-prev" role="button" data-slide="prev">
+                            <span aria-hidden="true" class="mobi-mbri-left mobi-mbri mbr-iconfont"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" role="button" data-slide="next">
+                            <span aria-hidden="true" class="mobi-mbri-right mobi-mbri mbr-iconfont"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form1 cid-rVKij44fx8" id="form1-8">
+            <div class="animation__background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <img src="assets/images/triangle-purpl-transp.svg" class="triangle" alt="">
+            </div>
+            <div class="image__background">
+                <div class="circle__image1"></div>
+                <div class="circle__image2"></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6 col-md-6">
+                        <h4 class="mbr-section-subtitle mbr-medium mbr-fonts-style display-7">CONTACT US</h4>
+                        <div class="title">
+                            <h3 class="mbr-section-title mbr-medium mbr-fonts-style display-2">Have any<br> <span>questions?</span></h3>
+                            <span class="line"></span>
+                        </div>
+                        <p class="mbr-text mbr-fonts-style display-7"><%- SettingData.company_title -%></p>  
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-6 box">
+                        <div class="subscribe__form">
+                            <div class="d-flex" data-form-type="formoid">
+                                <form action="<%=process.env.BASE_URL%>/admin/contact/addsave" method="POST" id="subscribe__form" class="mbr-form form-with-styler" data-form-title="Mobirise Form">
+                                    <div class="row">
+                                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> </div>
+                                    </div>
+                                    <div class="dragArea row align-items-end">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="subject">
+                                            <input type="text" name="name" placeholder="Your Name*" data-form-field="name" class="form-control display-7" value="" id="name-form1-8">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="e-mail">
+                                            <input type="email" name="email" placeholder="Your email*" data-form-field="email" class="form-control display-7" value="" id="e-mail-form1-8">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="subject">
+                                            <input type="number" name="mobile" placeholder="Contact*" data-form-field="mobile" class="form-control display-7" value="" id="mobile-form1-8">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="subject">
+                                            <input type="text" name="subject" placeholder="Subject*" data-form-field="subject" class="form-control display-7" value="" id="subject-form1-8">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 -xl-7 form-group" data-for="message">
+                                            <textarea name="message" placeholder="Message" data-form-field="message" class="form-control display-7" id="message-form1-8"></textarea>
+                                        </div>
+                                        <div class="col-lg-4 col-md-5 col-sm-5 input-group-btn d-flex">
+                                            <button type="submit" class="btn btn-md btn-warning display-7">Send Message</button>
+                                        </div>   
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features10 cid-rVKm2LJaTN" id="features10-9">
+            <div class="animation__background" style="z-index: 0;">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <img src="assets/images/triangle-blue-transp.svg" class="triangle" alt="">
+                <img src="assets/images/quadr.svg" class="quadr" alt="">
+            </div>
+            <div class="subscribe">
+              <div class="section-header">
+                <h2>Newsletter</h2>
+                <p>To stay updated with our activities, please subscribe to our newsletter</p>
+              </div>
+      
+              <form id="subscribe" method="post" action="<%=process.env.BASE_URL%>/admin/subscribeemail/addsave" class="mbr-form form-with-styler">
+                <div class="row">
+                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for Subscribe</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> </div>
+                </div>
+                <div class="form-row justify-content-center dragArea row align-items-end">
+                  <div class="col-auto">
+                    <input type="email" id='SubEmail' name="email" class="form-control" placeholder="Enter your Email"/>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" id="subscribesuccesfull">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+      
+            </div>
+        </section>
+
+        <section class="footer1 cid-rVMpGQKEQU" id="footer1-g">
+            <div class="animation__background">
+                <img src="assets/images/triangle-purpl-semitransp.svg" class="triangle" alt="" title="">
+                <div class="circle"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12 wrap order-0">
+                        <img class="logo__image" src="/setting/company_logo/<%=SettingData.company_logo%>" alt="Mobirise" title="">
+                        <p class="brand__email mbr-fonts-style display-4" ><a href="mailto:<%=SettingData.email%>"><%=SettingData.email%></a></p>
+                        <p class="brand__phone mbr-fonts-style display-4"><a href="tel:<%=SettingData.whatsapp%>">+91 <%=SettingData.whatsapp%></a></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 wrap">
+                        <h4 class="mbr-fonts-style mbr-regular footer__title display-5">About the Center</h4>
+                        <div class="mbr-list">
+                            <p class="footer__items mbr-fonts-style display-4"><a href="index.html#content4-3">About</a></p>
+                            <p class="footer__items mbr-fonts-style display-4"><a href="index.html#form1-8">Help</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 wrap">
+                        <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Services</h4>
+                        <div class="mbr-list">    
+                            <p class="footer__items mbr-fonts-style display-4"><a href="index.html#features1-b">Programs</a></p>
+                            <p class="footer__items mbr-fonts-style display-4"><a href="index.html#gallery1-4">Photo Album</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12 wrap">
+                        <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Our Address</h4>
+                        <p class="footer__adress mbr-fonts-style display-4"><%=SettingData.location%></p>
+                        <ul class="mbr-list social">      
+                            <li class="social__items mbr-fonts-style display-4">
+                                <a href="<%=SettingData.facebook%>">
+                                    <span class="fa fa-facebook-f mbr-iconfont"></span>
+                                </a>
+                            </li>
+                            <li class="social__items mbr-fonts-style display-4">
+                                <a href="<%=SettingData.twitter%>">
+                                    <span class="fa fa-twitter mbr-iconfont"></span>
+                                </a>
+                            </li>
+                            <li class="social__items mbr-fonts-style display-4">
+                                <a href="<%=SettingData.instagram%>">
+                                    <span class="fa fa-instagram mbr-iconfont"></span>
+                                </a>
+                            </li>
+                        </ul>       
+                    </div> 
+                </div>   
+            </div>             
+        </section>
+
+        <script src="<%=process.env.ASSETS_URL%>assets/web/assets/jquery/jquery.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/popper/popper.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/tether/tether.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/touchswipe/jquery.touch-swipe.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/playervimeo/vimeo_player.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/masonry/masonry.pkgd.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/smoothscroll/smooth-scroll.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/nav-dropdown.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/navbar-dropdown.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/mbr-tabs/mbr-tabs.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.full.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/theme/js/script.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/slidervideo/script.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/gallery/player.min.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/gallery/script.js"></script>
+        <script src="<%=process.env.ASSETS_URL%>assets/formoid.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $("#subscribe__form").submit(function(event){
+                event.preventDefault(); //prevent default action 
+                var post_url = $(this).attr("action"); //get form action url
+                var request_method = $(this).attr("method"); //get form GET/POST method
+                var form_data = $(this).serialize(); //Encode form elements for submission
+                $.ajax({ 
+                  url : post_url,
+                  type: request_method,
+                  data : form_data, 
+                   success: function(data){
+                    console.log(data)
+                     if(data.status){
+                      swal("Good job!", data.message, "success");
+                      $('#SubEmail').val('');
+                      $('#name').val('');
+                      $('#email').val('');
+                      $('#mobile').val('')
+                      $('#subject').val('');
+                      $('#message').val('');
+                     }else{
+                      swal("Oh noes!", data.message, "error");
+                      //alert('Error : '+data.message)
+                     }              
+                   }
+                   , error: function(jqXHR, textStatus, err){
+                       alert('text status '+textStatus+', err '+err)
+                   }
+                });
+              });
+              $("#subscribe").submit(function(event){
+                event.preventDefault(); //prevent default action 
+                var post_url = $(this).attr("action"); //get form action url
+                var request_method = $(this).attr("method"); //get form GET/POST method
+                var form_data = $(this).serialize(); //Encode form elements for submission
+                $.ajax({ 
+                  url : post_url,
+                  type: request_method,
+                  data : form_data, 
+                   success: function(data){  
+                     if(data.status){
+                      swal("Good job!", data.message, "success");
+                      $('#subscribesuccesfull').val('');
+                     }else{
+                      swal("Oh noes!", data.message, "error");
+                     }              
+                   }
+                   , error: function(jqXHR, textStatus, err){
+                       alert('text status '+textStatus+', err '+err)
+                   }
+                });
+              });
+            });
+        </script>
+    </body>
+<!-- Mirrored from mobirise.com/extensions/modernm4/family_center/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 May 2021 10:15:02 GMT -->
+</html>

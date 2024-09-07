@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo-school-140x140.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <title>Membership</title>
+
+    <!-- favicon  -->
+    <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="icon">
+    <link href="<%=process.env.ADMIN_UPLOAD_URL%>setting/favicon/<%=SettingData.favicon%>" rel="apple-touch-icon">
+    
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/tether/tether.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/theme/css/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/gallery/style.css">
+    <link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/recaptcha.css">
+    <link rel="preload" as="style" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="<%=process.env.ASSETS_URL%>assets/mobirise/css/mbr-additional.css" type="text/css">
+    <style>
+label {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.card-input-element+.card {
+  height: calc(36px + 2*1rem);
+  color: var(--primary);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.card-input-element+.card:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked+.card {
+  border: 2px solid var(--primary);
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+}
+
+.card-input-element:checked+.card::after {
+  content: '\fe6e';
+  color: #AFB8EA;
+  font-family: 'Material Icons';
+  font-size: 24px;
+  -webkit-animation-name: fadeInCheckbox;
+  animation-name: fadeInCheckbox;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@-webkit-keyframes fadeInCheckbox {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(-20deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@keyframes fadeInCheckbox {
+  from {
+    opacity: 0;
+    transform: rotateZ(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+    </style>
+  </head>
+  <!-- ======= Header ======= -->
+  <section class="menu1 cid-rVKhxH9nGA" once="menu" id="menu1-0">
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+            <div class="col-lg-auto padd_lr_0">
+                <span class="navbar-logo">
+                    <img src="/setting/company_logo/<%=SettingData.company_logo%>" style="height: 115px;margin-left: 30px;">
+                </span>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#about">About the Center</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#services">Programs and Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-secondary display-7" href="<%=process.env.BASE_URL%>#gallery1-4">Photo Album</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link text-secondary display-7" id="Membership" href="<%=process.env.BASE_URL%>/membership">Membership</a>
+                </li>
+            </ul>
+            <div class="widget">
+              <p class="block__phone mbr-fonts-style display-5">Inquery <a href="tel:<%=SettingData.whatsapp%>" class="widget_tel mbr-medium text-warning">+91 <%=SettingData.whatsapp%></a></p>        
+            </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+</body>
+
+    
+<section class="form1 cid-rVKij44fx8 membership" id="membership">
+  <div class="animation__background">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <img src="assets/images/triangle-purpl-transp.svg" class="triangle" alt="">
+  </div>
+  <div class="image__background">
+      <div class="circle__image1"></div>
+      <div class="circle__image2"></div>
+  </div>
+  <div class="header" style="text-align: center; padding-bottom: 35px;">
+    <h2>Please Fill Your Information</h2>
+  </div>
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-xl-12 col-lg-6 col-md-6 box">
+              <div class="subscribe__form">
+                  <div class="d-flex" data-form-type="formoid">
+                      <form action="<%=process.env.BASE_URL%>/admin/membership/register" method="POST" id="subscribe__form" class="mbr-form form-with-styler" data-form-title="Mobirise Form">
+                          <div class="row">
+                              <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                                  <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> </div>
+                          </div>
+                          <div class="dragArea row align-items-end">
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                <input type="text" name="name" placeholder="Your Name" data-form-field="name" class="form-control display-7" value="" id="name">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                <input type="text" name="fathername" placeholder="Father Name" data-form-field="fathername" class="form-control display-7" value="" id="fathername">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="e-mail">
+                                <input type="email" name="email" placeholder="Your email" data-form-field="email" class="form-control display-7" value="" id="email">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                <input type="text" name="mobile" placeholder="Contact" data-form-field="mobile" class="form-control display-7" value="" id="mobile">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                <input type="text" name="education" placeholder="Education" data-form-field="education" class="form-control display-7" value="" id="education">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                <input type="text" name="workplace" placeholder="Work Place" data-form-field="workplace" class="form-control display-7" value="" id="workplace">
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject">
+                                  <textarea name="address" placeholder="Address" data-form-field="address" class="form-control display-7" id="address"></textarea>
+                              </div> 
+                              <div class="col-lg-6 col-md-6 col-sm-12 form-group" data-for="subject" style="margin-bottom: 80px;">        
+                                <div class="row">                                  
+                                  <div class="col-md-6 col-lg-6 col-sm-4">                                      
+                                    <label>
+                                      <input type="radio" required name="demo" class="card-input-element d-none" value="100" id="member">
+                                      <span class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+                                        Membership ₹ 100
+                                      </span>
+                                    </label>                                                                
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-sm-4">
+                                    <label>
+                                      <input type="radio" required name="demo" class="card-input-element d-none" value="200" id="volunteer">
+                                      <span class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+                                        Volunteer ₹ 200
+                                      </span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 col-sm-5 input-group-btn d-flex">
+                                  <button type="submit" class="btn btn-md btn-warning display-7">Register</button>
+                              </div>   
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  </main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  
+  <section class="footer1 cid-rVMpGQKEQU" id="footer1-g">
+    <div class="animation__background">
+        <!-- <img src="assets/images/triangle-purpl-semitransp.svg" class="triangle" alt="" title=""> -->
+        <div class="circle"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-12 wrap order-0">
+                <img class="logo__image" src="/setting/company_logo/<%=SettingData.company_logo%>" alt="Mobirise" title="">
+                <p class="brand__email mbr-fonts-style display-4"><a href="mailto:<%=SettingData.email%>"><%=SettingData.email%></a></p>
+                <p class="brand__phone mbr-fonts-style display-7"><a href="tel:<%=SettingData.whatsapp%>">+91 <%=SettingData.whatsapp%></a></p>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">About the Center</h4>
+                <div class="mbr-list">
+                    <p class="footer__items mbr-fonts-style display-4">About</a></p>
+                    <p class="footer__items mbr-fonts-style display-4">Help</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Services</h4>
+                <div class="mbr-list">    
+                    <p class="footer__items mbr-fonts-style display-4">Programs</p>
+                    <p class="footer__items mbr-fonts-style display-4">Photo Album</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 wrap">
+                <h4 class="mbr-fonts-style mbr-regular footer__title display-5">Our Address</h4>
+                <p class="footer__adress mbr-fonts-style display-4"><%=SettingData.location%></p>
+                <ul class="mbr-list social">      
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.facebook%>">
+                            <span class="fa fa-facebook-f mbr-iconfont"></span>
+                        </a>
+                    </li>
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.twitter%>">
+                            <span class="fa fa-twitter mbr-iconfont"></span>
+                        </a>
+                    </li>
+                    <li class="social__items mbr-fonts-style display-4">
+                        <a href="<%=SettingData.instagram%>">
+                            <span class="fa fa-instagram mbr-iconfont">
+                            </span>
+                        </a>
+                    </li>
+                </ul>       
+            </div> 
+        </div>   
+    </div>             
+</section>
+
+<script src="<%=process.env.ASSETS_URL%>assets/web/assets/jquery/jquery.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/popper/popper.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/tether/tether.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/playervimeo/vimeo_player.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/masonry/masonry.pkgd.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/smoothscroll/smooth-scroll.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/nav-dropdown.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/mbr-tabs/mbr-tabs.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formstyler/jquery.formstyler.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/datepicker/jquery.datetimepicker.full.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/theme/js/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/slidervideo/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/gallery/player.min.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/gallery/script.js"></script>
+<script src="<%=process.env.ASSETS_URL%>assets/formoid.min.js"></script>
+
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#subscribe__form").submit(function(event){
+      event.preventDefault(); //prevent default action 
+      var post_url = $(this).attr("action"); //get form action url
+      var request_method = $(this).attr("method"); //get form GET/POST method
+      var form_data = $(this).serialize(); //Encode form elements for submission
+      $.ajax({ 
+        url : post_url,
+        type: request_method,
+        data : form_data, 
+         success: function(data){
+           if(data.status){
+            swal("Good job!", data.message, "success");
+            $('#name').val('');
+            $('#fathername').val('');
+            $('#email').val('');
+            $('#mobile').val('')
+            $('#education').val('');
+            $('#workplace').val('');
+            $('#address').val('');
+            $('#member').val('');
+            $('#volunteer').val('');
+           }else{
+            swal("Oh noes!", data.message, "error");
+            //alert('Error : '+data.message)
+           }              
+         }
+         , error: function(jqXHR, textStatus, err){
+             //alert('text status '+textStatus+', err '+err)
+         }
+      });
+    });
+    var url = window.location.pathname;
+    url = url.split("/");
+    if(url.includes("membership")){
+      $("#Membership").addClass('active');
+    }
+  });
+</script>
+  
